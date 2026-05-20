@@ -133,3 +133,19 @@ Other diff options
 bash: scripts/anti_heavyfile.sh: No such file or directory
 fatal: not a git repository (or any of the parent directories): .git
 fatal: not a git repository (or any of the parent directories): .git
+[main 47454b3] auto-save 2026-05-20 15:10:02
+ 10 files changed, 554 insertions(+), 15 deletions(-)
+ create mode 100644 .heavyfile_ignore
+ create mode 100644 cron.log
+ create mode 100644 hud/HUD_HERMES_OMEGA_PRIME.md
+ create mode 100755 hud/hud_hermes_omega_prime.sh
+ create mode 100644 pre_scan_report.txt
+ create mode 100755 rollback.sh
+ create mode 100755 scripts/anti_heavyfile.sh
+ create mode 100755 upgrade_v19_2.sh
+ create mode 100755 watcher.sh
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
