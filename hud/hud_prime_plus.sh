@@ -2,7 +2,8 @@
 # Hermès Ω PRIME+++ v20.4 — Black‑Room Edition
 # Mode Shadow‑Ops Intelligent — Transparence Adaptative
 
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+# ROOT FIABLE À 100%
+ROOT="$(dirname "$(readlink -f "$0")")/.."
 
 while true; do
   clear
@@ -17,29 +18,24 @@ while true; do
   echo -e "──────────────────────────────────────────────\e[0m"
   echo ""
 
-  # RESSOURCES
   echo -e "\e[38;5;240m📊 RESSOURCES\e[0m"
   bash "$ROOT/hud/modules/cpu.sh"
   bash "$ROOT/hud/modules/ram.sh"
   bash "$ROOT/hud/modules/gpu.sh"
   echo ""
 
-  # RÉSEAU
   echo -e "\e[38;5;240m🌐 RÉSEAU\e[0m"
   bash "$ROOT/hud/modules/net.sh"
   echo ""
 
-  # RISQUES COCKPIT
   echo -e "\e[38;5;240m⚠️  RISQUES COCKPIT\e[0m"
   bash "$ROOT/hud/modules/risks.sh"
   echo ""
 
-  # TIMELINE
   echo -e "\e[38;5;240m📜 TIMELINE\e[0m"
   bash "$ROOT/hud/modules/timeline.sh"
   echo ""
 
-  # MODULES A1‑A22
   echo -e "\e[38;5;240m🧩 MODULES A1‑A22\e[0m"
   bash "$ROOT/hud/modules/modules_status.sh"
   echo ""

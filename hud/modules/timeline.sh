@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
-
-LOG="$HOME/OpenClaw_Light/cron.log"
+# Hermès Ω PRIME+++ v20.4 — Timeline Module
 
 echo "Timeline :"
-if [ -f "$LOG" ]; then
-  tail -n 5 "$LOG" | sed 's/^/   • /'
-else
-  echo "   • (vide)"
-fi
+git -C ~/OpenClaw_Light log -1 --pretty=format:"   • %s"
+echo ""
