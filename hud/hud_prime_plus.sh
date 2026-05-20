@@ -1,11 +1,18 @@
 #!/usr/bin/env bash
+# Hermès Ω PRIME+++ v20.4 — Black‑Room Edition
+# Mode Shadow‑Ops Intelligent — Transparence Adaptative
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 
 while true; do
   clear
+
+  # Transparence adaptative
+  OPACITY=$(bash "$ROOT/hud/modules/opacity.sh")
+  echo -ne "\033]11;rgba(0,0,0,$OPACITY)\007"
+
   echo -e "\e[38;5;240m──────────────────────────────────────────────"
-  echo -e "        HUD Hermès Ω PRIME++  v20.3 — ULTRA‑STEALTH"
+  echo -e "        HUD Hermès Ω PRIME+++  v20.4 — BLACK‑ROOM"
   echo -e "        OpenClaw_Light — Shadow‑Ops Cockpit"
   echo -e "──────────────────────────────────────────────\e[0m"
   echo ""
