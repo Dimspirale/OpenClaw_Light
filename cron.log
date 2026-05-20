@@ -150,3 +150,12 @@ fatal: Could not read from remote repository.
 Please make sure you have the correct access rights
 and the repository exists.
 🟦 Aucun changement à sauvegarder.
+[main 38551b0] auto-save 2026-05-20 15:30:02
+ 4 files changed, 97 insertions(+), 8 deletions(-)
+ create mode 100755 hud/modules/gpu.sh
+ create mode 100755 hud/modules/risks.sh
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
