@@ -487,3 +487,10 @@ fatal: Could not read from remote repository.
 Please make sure you have the correct access rights
 and the repository exists.
 🟦 Aucun changement à sauvegarder.
+[main 3e5ea7b] auto-save 2026-05-21 11:50:02
+ 1 file changed, 1 insertion(+)
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
